@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* The header section is started from here */
+.header-nav h1{
+    display: none;
+ }
+
+ /* The menu section started from here */
+.menu-image img, .pic img{
+    display: none;
+}
+ .pic-area{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    height: 600px;
+}
+
+/* The about area is started from here */
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 850px;
+    background-color: rgba(0, 0, 0, 0.924);
+    color: white;
+}
+.about-description{
+    display: flex;
+    justify-content: center;
+}
+.ab-pic{
+    margin-top: 35px;
+}
+.middle{
+    width: 100%;
+    color: aqua;
+    margin: 0, auto;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+#btnn{
+    margin-left: 37%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  #about-description h1{
+    margin: 20px auto;
+    margin-left: 46%;
+}
+.side-image, .or{
+    margin: 0 auto;
+}

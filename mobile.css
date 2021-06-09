@@ -1,0 +1,61 @@
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+     /* This is the sectiion of the css for the mobile line */
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header "
+        "menubox "
+        "about"
+        "aside "
+        "from"
+        "footer";
+    }
+    .menu-image img, .pic img{
+        display: none;
+    }
+    .middle-line{
+       display: none;
+    }
+    #btnn{
+      margin-left: 30%;
+        
+    }
+    .pic-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: 100%;
+    }
+    /* The about of the mobile section will be edited here */
+    .middle{
+        width: 100%;
+        color: aqua;
+        margin: 0, auto;
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+    #about-description h1{
+        margin: 20px auto;
+        margin-left: 46%;
+    }
+    .side-image img{
+        display: grid;
+        padding-top: 13px;
+    }
+    
+    .or img{
+       display: none;
+    } 
+    .sp-area{
+        padding-top: 3rem;
+    }
+    .tag-line{
+        left: ;
+    }
+    

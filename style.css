@@ -1,0 +1,317 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The main grid section is started from here */
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "menubox menubox menubox menubox"
+    "about about about about"
+    "aside aside aside aside"
+    "from from from from"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+  
+}
+main{
+    grid-area: main;
+}
+section{
+     grid-area: menubox;
+}
+.about{
+    grid-area: about;
+}
+.from{
+    grid-area: from;
+    height: 500px;
+    background: #000;
+}
+aside{
+    grid-area: aside;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+/* The main grid sectiion is ended here */
+header{
+    background: url(cvr.jpg);
+    height: 690px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.test{
+    height: 690px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.olay{
+    height: 580px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+.header-nav{
+    height: 110px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.header-nav img{
+    display: inline;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    justify-self: center;
+}
+.header-nav ul{
+    display: flex;
+}
+.header-nav ul li{
+    list-style-type: none;
+    padding: 5px 17px;
+    
+}
+.header-nav ul li a{
+    font-size: 1.3rem;
+    color: orange;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.header-nav h1{
+    font-family: montez;
+    color: orange;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 2.3rem;
+}
+.middle-line{
+    position: relative;
+    top: 45%;
+    left: 33%;
+    color: white;
+    font-family: montez;
+    font-size: 3rem;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.424);
+    display: inline;
+    font-weight: 700;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+/* The cover area  is started from here */
+.cover-area{
+    background: rgba(0, 0, 0, 0.239);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* The cover area is ended here */
+
+/* The menu area is started from here */
+
+section{
+    background: url(wow.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+}
+.nest{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    
+}
+.s-lay{
+    background-color: rgba(0, 0, 0, 0.561);
+    height: 680px;
+    
+}
+.menu-image img{
+    align-items: space-around;
+    width: 300px;
+    box-shadow: 25px -25px 10px rgba(0, 0, 2, 0.801);
+    display: grid;
+}
+
+.menu-image img, .pic img{
+    height: 220px;
+    width: 240px;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-top: 5rem;
+}
+.slider-menu{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    height: 630px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.096);
+    border: 2px solid white;
+    box-shadow: -35px 25px 15px rgba(0, 0, 2, 0.801);
+}
+.pic img{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-gap: 30px;
+    box-shadow: -25px -25px 8px rgba(0, 0, 2, 0.801);
+}
+
+ #btn{
+    height: 140px;
+    width: 140px;
+    background: rgba(0, 0, 0, 0.192);
+    border: none;
+    color: orange;
+    border: 4px solid white;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.the-line{
+    border: 1px solid white;
+    padding: 20px 7px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 208, 0);
+    box-shadow: -15px -18px 12px black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 1.6rem;
+}
+.the-line h1{
+    font-family: montez;
+    color: rgb(245, 9, 9);
+    font-size: 2rem;
+}
+#sl-image{
+    height: 120px;
+    width: 120px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+/* The about section is started from here */
+
+.about{
+    background: url();
+    background-color: rgba(15, 0, 0, 0.931);
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    color: white;
+    line-height: 1.8rem;
+}
+span{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    margin: 0 auto;
+    color: rgb(116, 35, 21);
+    font-size: 2.6rem;
+    /* background-color: rgb(0, 0, 0); */
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-family: montez;
+    letter-spacing: 3px;
+    text-shadow: 12px -10px 8px rgba(0, 0, 0, 0.596);
+}
+.ab-pic{
+    position: relative;
+}
+.about img{
+    height: 350px;
+    width: 450px;
+    box-shadow: 30px 30px 20px black;
+    border-radius: 10px;
+}
+#about-description:nth-child(2) {
+    padding-right: 60px;
+    text-align: justify;
+    font-size: 1.1rem;
+} 
+#btnn{
+    margin-top: 2rem;
+    padding: 1rem 2.3rem;
+    font-family: consolas;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: none;
+    border: 2px solid orange;
+    background: rgba(0, 0, 0, 0.431);
+    color: white;
+}
+
+/* The mini cover area is started from here */
+
+
+.minicover{
+    background: url(orange.jpg) no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    background-size:cover;
+    background-position: center;
+}
+.overlay{
+  color: white;
+}
+#tag-line{
+    position: relative;
+    top: 45%;
+    left: 36%;
+    color: white;
+    font-family: montez;
+    font-size: 3rem;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.424);
+    display: inline;
+    font-weight: 700;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+.side-image img{
+    height: 250px;
+    width: 280px;
+    margin: 0px auto;
+    justify-self: end;
+}
+.or img{
+    height: 250px;
+    width: 280px;
+    margin: 0px auto;
+    justify-self: first baseline;
+}
+.pic-area{
+    display: grid;
+    grid-template-columns: .5fr .5fr 1.5fr;
+    align-items: center;
+    height: 600px;
+}
+.sp-area{
+    padding: 0 3rem;
+    text-align: justify;
+    text-transform: unset;
+}
+
